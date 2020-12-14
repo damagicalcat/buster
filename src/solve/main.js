@@ -70,6 +70,9 @@ function syncUI() {
     }
 
     solverButton.addEventListener('click', solveChallenge);
+    setTimeout(()=>{
+      solverButton.addEventListener('click', solveChallenge);
+    }, 5000)
 
     shadow.appendChild(solverButton);
   }
